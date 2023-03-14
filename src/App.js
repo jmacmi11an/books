@@ -11,7 +11,6 @@ function App() {
             title,
         }])
     };
-    
 
     const deleteBookById = (id) => {
         const updatedBooks = books.filter((book) => {
