@@ -9,5 +9,19 @@ POST http://localhost:3001/books HTTP/1.1
 Content-Type: application/json
 
 {
-    "title": "Harry Potter"
+    "title": "Harry Potterjh"
 }
+
+###
+
+PATCH http://localhost:3001/books/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "dark knight"
+}
+
+###
+
+DELETE http://localhost:3001/books/4 HTTP/1.1
+Content-Type: application/json
