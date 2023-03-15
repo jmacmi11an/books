@@ -1,24 +1,8 @@
 {
   "books": [
     {
-      "title": "dark knight",
-      "id": 1
-    },
-    {
       "title": "asdf",
       "id": 2
-    },
-    {
-      "title": "asdf",
-      "id": 3
-    },
-    {
-      "title": "ads",
-      "id": 4
-    },
-    {
-      "title": "hello",
-      "id": 5
     }
   ]
 }
