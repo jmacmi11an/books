@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useCallback } from "react";
 import axios from 'axios';
 
 const BooksContext = createContext();
@@ -11,6 +11,11 @@ function Provider({ children }) {
         
         setBooks(response.data);
     }
+
+    const stableFetchBooks = useCallback(
+        fetchBooks,
+        []
+    );
 
     const createBook = async (title) => {
         const response = await axios.post('http://localhost:3001/books', {
@@ -50,7 +55,7 @@ function Provider({ children }) {
         deleteBookById,
         updateBookById,
         createBook,
-        fetchBooks
+        stableFetchBooks
     };
 
     return <BooksContext.Provider value={valueToShare}>
